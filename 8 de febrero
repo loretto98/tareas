@@ -1,0 +1,32 @@
+int x = 0;
+int rojo = 3;
+int verde =  5;
+int amar = 7;
+int t;
+
+void setup ()
+{
+Serial.begin (9600);
+Serial.println("¿Cuanto tiempo quieres?");
+while(Serial.available() == 0)
+
+t = Serial.parseInt ();
+pinMode (rojo, OUTPUT);
+pinMode (verde, OUTPUT);
+pinMode (amar, OUTPUT);
+}
+void loop ()
+{
+digitalWrite(rojo, HIGH);
+delay (t);
+digitalWrite(rojo, LOW);
+delay (t);
+digitalWrite(verde, HIGH);
+delay (t);
+digitalWrite(verde, LOW);
+delay (t);
+digitalWrite(amar, HIGH);
+delay (t);
+digitalWrite(amar, LOW);
+delay (t);
+}
