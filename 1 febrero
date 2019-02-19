@@ -1,0 +1,30 @@
+int rojo = 2;
+int verde = 5;
+int azul = 7;
+void setup() {
+  pinMode (rojo, OUTPUT);
+   pinMode (verde, OUTPUT);
+    pinMode (azul, OUTPUT);
+ 
+ 
+  // put your setup code here, to run once:
+ 
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+ digitalWrite (rojo, HIGH);
+  delay (100);
+  digitalWrite (rojo, LOW);
+  delay (400);
+  digitalWrite (verde, HIGH);
+  delay (100);
+  digitalWrite (verde, LOW);
+  delay (400);
+  digitalWrite (azul, HIGH);
+  delay (100);
+  digitalWrite (azul, LOW);
+  delay (400);
+
+}
